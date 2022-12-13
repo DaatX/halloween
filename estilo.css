@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fruktur', cursive;
+}
+
+
+/*section*/
+
+section {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0b061f;
+}
+
+
+/* araña */
+
+.araña {
+    position: absolute;
+    top: 0;
+    animation: animateAraña 15s ease-in-out infinite;
+}
+
+
+/* keyframe de araña */
+
+@keyframes animateAraña {
+    0%,
+    100% {
+        transform: translateY(-500px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+}
+
+
+/* calabaza 1 */
+
+.calabaza1 {
+    position: absolute;
+    top: 100px;
+    right: 200px;
+    animation: animateCalabaza 8s ease-in-out infinite;
+}
+
+
+/* calabaza 2 */
+
+.calabaza2 {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    width: 25%;
+    animation: animateCalabaza 4s ease-in-out infinite;
+}
+
+
+/* keyframe de calabaza */
+
+@keyframes animateCalabaza {
+    0%,
+    100% {
+        transform: translateY(-50px);
+    }
+    50% {
+        transform: translateY(50px);
+    }
+}
+
+
+/* telaraña web */
+
+.telaraña {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: screen;
+}
+
+
+/* h2 */
+
+h2 {
+    position: relative;
+    font-size: 12vw;
+    font-weight: 100;
+    display: flex;
+    color: #0e3742;
+    text-shadow: none;
+    animation: animate 5s infinite linear;
+}
+
+
+/* keyframe de texto */
+
+@keyframes animate {
+    0%,
+    18%,
+    20%,
+    50.1%,
+    60%,
+    65.1%,
+    80%,
+    90.1%,
+    92% {
+        color: rgba(255, 255, 255, 0.1);
+        text-shadow: none;
+    }
+    18.1%,
+    20.1%,
+    30%,
+    50%,
+    60.1%,
+    65%,
+    80.1%,
+    90%,
+    92.1%,
+    100% {
+        color: #ffac09;
+        text-shadow: 0 0 10px #ffac09, 0 0 20px #ffac09, 0 0 40px #ffac09, 0 0 80px #ffac09, 0 0 160px #ffac09;
+    }
+}
